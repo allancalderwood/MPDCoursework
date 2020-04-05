@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* NAME: ALLAN CALDERWOOD
+* MATRICULATION NUMBER : S1628544
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/searchContainer"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageButton
+            android:id="@+id/closeSrch"
+            android:layout_width="30dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_arrow_up"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <fragment
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/search"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="20dp">
+            <ImageButton
+                android:id="@+id/openSrch"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_search"
+                />
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Route"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/current"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_warning"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/roadworks"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_roadworks"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roadworks"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/planned"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_planned"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Planned"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

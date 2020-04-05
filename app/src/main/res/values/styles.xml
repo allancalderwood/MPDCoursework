@@ -1,0 +1,18 @@
+<!--
+* NAME: ALLAN CALDERWOOD
+* MATRICULATION NUMBER : S1628544
+-->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Custom colors from colors.xml. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:text">@color/text</item>
+
+    </style>
+
+</resources>

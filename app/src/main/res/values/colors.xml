@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* NAME: ALLAN CALDERWOOD
+* MATRICULATION NUMBER : S1628544
+-->
+<resources>
+    <color name="colorPrimary">#313635</color>
+    <color name="colorPrimaryDark">#1e2121</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorAccent">#31c4a2</color>
+    <color name="text">#ffffff</color>
+</resources>
